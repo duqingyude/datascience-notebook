@@ -1,2 +1,9 @@
 FROM jupyter/datascience-notebook:latest
-RUN conda install tensorflow jieba nltk gensim sklearn
+RUN conda install --quiet --yes \
+    'tensorflow' \
+    'jieba' \
+    'nltk' \
+    'gensim' \
+    'sklearn' \
+    && \
+    conda clean --all -f -y
