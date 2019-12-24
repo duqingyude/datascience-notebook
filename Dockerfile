@@ -1,9 +1,9 @@
 FROM jupyter/datascience-notebook:latest
-RUN conda install --quiet --yes \
+RUN conda install --quiet --yes -c conda-forge \
     'tensorflow' \
     'jieba' \
     'nltk' \
     'gensim' \
-    'sklearn' \
+    'scikit-learn' \
     && \
     conda clean --all -f -y
