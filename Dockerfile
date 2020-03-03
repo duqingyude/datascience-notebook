@@ -5,5 +5,6 @@ RUN conda install --quiet --yes -c conda-forge \
     'nltk' \
     'gensim' \
     'scikit-learn' \
+    'pytorch' \
     && \
     conda clean --all -f -y
