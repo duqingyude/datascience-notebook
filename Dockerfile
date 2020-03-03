@@ -5,6 +5,6 @@ RUN conda install --quiet --yes -c conda-forge \
     'nltk' \
     'gensim' \
     'scikit-learn' \
-    'pytorch' \
+    'pytorch torchvision cpuonly -c pytorch' \
     && \
     conda clean --all -f -y
