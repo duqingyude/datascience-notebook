@@ -4,7 +4,6 @@ RUN conda install --quiet --yes -c conda-forge \
     'jieba' \
     'nltk' \
     'gensim' \
-    'scikit-learn' \
-    'pytorch torchvision cpuonly -c pytorch' \
-    && \
+    'scikit-learn'
+RUN conda install --quiet --yes -c pytorch pytorch torchvision cpuonly && \
     conda clean --all -f -y
